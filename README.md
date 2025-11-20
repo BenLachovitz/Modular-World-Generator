@@ -95,8 +95,6 @@ This makes it ideal for:
 
 # 🖼 **Screenshots**
 
-*(Place your images later — I prepared labeled placeholders for you)*
-
 ### **Editor Window**
 
 > Add screenshot here
