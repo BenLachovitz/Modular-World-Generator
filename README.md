@@ -182,7 +182,7 @@ Modular-World-Generator/
 ├── images/                            # README screenshots and diagrams
 ├── README.md                          # Main project overview
 └── .gitignore
-
+```
 
 ---
 
