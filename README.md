@@ -171,6 +171,21 @@ This ensures scenes are both:
 
 ---
 
+# 📁 Repository Structure
+
+```txt
+Modular-World-Generator/
+├── ModularWorldGenerator - Unity/     # Main Unity Editor tool
+├── LicenseAdminTool - Python/         # Python admin tool for license management
+├── Supabase/                          # Supabase Edge Functions and database scripts
+├── docs/                              # Project documentation
+├── images/                            # README screenshots and diagrams
+├── README.md                          # Main project overview
+└── .gitignore
+
+
+---
+
 # 🧠 **Generation Algorithm**
 
 ### **1. Road-Based Grid Creation**
