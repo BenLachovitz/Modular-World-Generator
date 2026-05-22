@@ -120,6 +120,16 @@ This makes it ideal for:
 > Add screenshot here
 > `![Grid Layout](images/grid.png)`
 
+### **License Admin Tool**
+
+> Add screenshot here  
+> `![License Admin Tool](images/license-admin-tool.png)`
+
+### **License Activation Flow**
+
+> Add diagram/screenshot here  
+> `![License Activation Flow](images/license-flow.png)`
+
 ---
 
 # ⚙️ **How It Works**
@@ -225,6 +235,13 @@ Rules ensure spacing and alignment:
 * .NET Framework compatible with Unity
 * Internet connection (for PRO license features)
 
+### **Clone the Repository**
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Modular-World-Generator.git
+cd Modular-World-Generator
+```
+
 ### **Steps**
 
 1. Clone the repository
@@ -271,6 +288,22 @@ Click **Regenerate Scene**
 → All new placements
 → New randomness
 → Same constraints
+
+---
+
+# 🛠 **Technology Stack**
+
+| Area | Technology |
+| --- | --- |
+| Game Engine | Unity 2023.2.20f1 |
+| Main Language | C# |
+| Editor Tooling | Unity EditorWindow / EditorGUILayout |
+| Navigation | Unity NavMesh |
+| Backend | Supabase |
+| Backend Functions | Supabase Edge Functions / TypeScript |
+| Admin Tool | Python / Tkinter |
+| Networking | UnityWebRequest |
+| Version Control | Git / GitHub |
 
 ---
 
