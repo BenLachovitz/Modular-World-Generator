@@ -33,10 +33,32 @@ public class LicenseResponse
     public string[] features;
 }
 
+
 public static class LicenseValidator
 {
-    private const string API_URL = "https://fpjgxaivlwlbbhjircsf.supabase.co/functions/v1/validate-license";
-    private const string ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwamd4YWl2bHdsYmJoamlyY3NmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk0NDY1MzgsImV4cCI6MjA2NTAyMjUzOH0.cSyxpv8-PvOUjqq-T0QWWFU72K6uExslefOdyG5yf9g";
+    private const string CONFIG_RESOURCE_PATH = "SupabaseLicenseConfig";
+    private static SupabaseLicenseConfig _config;
+
+    private static SupabaseLicenseConfig Config
+    {
+        get
+        {
+            if (_config == null)
+            {
+                _config = Resources.Load<SupabaseLicenseConfig>(CONFIG_RESOURCE_PATH);
+    
+                if (_config == null)
+                {
+                    Debug.LogError(
+                        "SupabaseLicenseConfig was not found. " +
+                        "Create it at Assets/Resources/SupabaseLicenseConfig.asset"
+                    );
+                }
+            }
+    
+            return _config;
+        }
+    }
 
     // Validation intervals (in hours)
     private const int BACKGROUND_VALIDATION_HOURS = 8;  // Check every 8 hours in background
@@ -268,7 +290,7 @@ public static class LicenseValidator
     {
         try
         {
-            Debug.Log("Starting license activation for key: " + licenseKey);
+            Debug.Log("Starting license activation request");
 
             var request = new LicenseRequest
             {
@@ -277,16 +299,14 @@ public static class LicenseValidator
                 action = "activate"
             };
             string jsonData = JsonUtility.ToJson(request);
-            Debug.Log("JSON data prepared: " + jsonData);
+            Debug.Log("License activation payload prepared");
 
-            using (UnityWebRequest www = new UnityWebRequest(API_URL, "POST"))
+            using (UnityWebRequest www = new UnityWebRequest(Config.ValidateLicenseUrl, "POST"))
             {
                 byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData);
                 www.uploadHandler = new UploadHandlerRaw(bodyRaw);
                 www.downloadHandler = new DownloadHandlerBuffer();
-                www.SetRequestHeader("Content-Type", "application/json");
-                www.SetRequestHeader("apikey", ANON_KEY);
-                www.SetRequestHeader("Authorization", "Bearer " + ANON_KEY);
+                ConfigureRequest(www);
 
                 Debug.Log("Sending activation request to: " + API_URL);
                 var operation = www.SendWebRequest();
@@ -399,14 +419,12 @@ public static class LicenseValidator
                 };
                 string jsonData = JsonUtility.ToJson(request);
 
-                using (UnityWebRequest www = new UnityWebRequest(API_URL, "POST"))
+                using (UnityWebRequest www = new UnityWebRequest(Config.ValidateLicenseUrl, "POST"))
                 {
                     byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData);
                     www.uploadHandler = new UploadHandlerRaw(bodyRaw);
                     www.downloadHandler = new DownloadHandlerBuffer();
-                    www.SetRequestHeader("Content-Type", "application/json");
-                    www.SetRequestHeader("apikey", ANON_KEY);
-                    www.SetRequestHeader("Authorization", "Bearer " + ANON_KEY);
+                    ConfigureRequest(www);
 
                     Debug.Log("Sending deactivation request");
                     var operation = www.SendWebRequest();
@@ -454,14 +472,12 @@ public static class LicenseValidator
         };
         string jsonData = JsonUtility.ToJson(request);
 
-        using (UnityWebRequest www = new UnityWebRequest(API_URL, "POST"))
+        using (UnityWebRequest www = new UnityWebRequest(Config.ValidateLicenseUrl, "POST"))
         {
             byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData);
             www.uploadHandler = new UploadHandlerRaw(bodyRaw);
             www.downloadHandler = new DownloadHandlerBuffer();
-            www.SetRequestHeader("Content-Type", "application/json");
-            www.SetRequestHeader("apikey", ANON_KEY);
-            www.SetRequestHeader("Authorization", "Bearer " + ANON_KEY);
+            ConfigureRequest(www);
 
             var operation = www.SendWebRequest();
 
@@ -579,5 +595,14 @@ public static class LicenseValidator
         {
             Debug.LogWarning("No active license to validate");
         }
+    }
+    
+    private static void ConfigureRequest(UnityWebRequest request)
+    {
+        if (Config == null)
+            return;
+            
+        request.SetRequestHeader("Content-Type", "application/json");
+        request.SetRequestHeader("apikey", Config.PublishableKey);
     }
 }

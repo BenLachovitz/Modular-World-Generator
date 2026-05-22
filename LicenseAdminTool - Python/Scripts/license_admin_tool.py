@@ -1,24 +1,29 @@
+import os
 import tkinter as tk
 from tkinter import ttk, messagebox, scrolledtext
 import requests
 import json
 from datetime import datetime
 import threading
+from dotenv import load_dotenv
 
 
 class LicenseAdminTool:
     def __init__(self):
+        load_dotenv()
+
         self.root = tk.Tk()
         self.root.title("Unity Tool - License Admin Panel")
         self.root.geometry("800x600")
         self.root.resizable(True, True)
 
         # Configuration
-        self.api_url = "https://fpjgxaivlwlbbhjircsf.supabase.co/functions/v1/key-management"
-        self.anon_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwamd4YWl2bHdsYmJoamlyY3NmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk0NDY1MzgsImV4cCI6MjA2NTAyMjUzOH0.cSyxpv8-PvOUjqq-T0QWWFU72K6uExslefOdyG5yf9g"
+        self.api_url = os.getenv("SUPABASE_KEY_MANAGEMENT_URL", "").strip()
+        self.publishable_key = os.getenv("SUPABASE_PUBLISHABLE_KEY", "").strip()
         self.admin_key = ""
 
         self.setup_ui()
+        self.validate_configuration_on_startup()
 
     def setup_ui(self):
         # Main frame
@@ -99,6 +104,28 @@ class LicenseAdminTool:
         self.log_message("🚀 License Admin Tool started successfully!")
         self.log_message("📝 Enter your admin secret key and click 'Get License Statistics' to begin.")
 
+    def validate_configuration_on_startup(self):
+        missing = []
+
+        if not self.api_url:
+            missing.append("SUPABASE_KEY_MANAGEMENT_URL")
+
+        if not self.publishable_key:
+            missing.append("SUPABASE_PUBLISHABLE_KEY")
+
+        if missing:
+            self.log_message("⚠️ Missing configuration values:")
+            for item in missing:
+                self.log_message(f"   - {item}")
+
+            self.log_message("Create a local .env file based on .env.example.")
+            messagebox.showwarning(
+                "Missing Configuration",
+                "Missing values in .env:\n\n" + "\n".join(missing)
+            )
+        else:
+            self.log_message("✅ Supabase configuration loaded from .env")
+
     def log_message(self, message):
         """Add a timestamped message to the results area"""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -121,15 +148,34 @@ class LicenseAdminTool:
             return False
         return True
 
+    def validate_runtime_config(self):
+        if not self.api_url:
+            messagebox.showerror(
+                "Missing API URL",
+                "SUPABASE_KEY_MANAGEMENT_URL is missing from your .env file."
+            )
+            return False
+
+        if not self.publishable_key:
+            messagebox.showerror(
+                "Missing Publishable Key",
+                "SUPABASE_PUBLISHABLE_KEY is missing from your .env file."
+            )
+            return False
+
+        return True
+
     def make_api_request(self, data):
         """Make API request to Supabase Edge Function"""
         try:
+            if not self.validate_runtime_config():
+                return None
+
             self.status_var.set("Sending request...")
 
             headers = {
                 'Content-Type': 'application/json',
-                'apikey': self.anon_key,
-                'Authorization': f'Bearer {self.anon_key}'
+                'apikey': self.publishable_key
             }
 
             response = requests.post(
@@ -139,11 +185,17 @@ class LicenseAdminTool:
                 timeout=30
             )
 
-            if response.status_code == 200:
-                return response.json()
-            else:
-                self.log_message(f"❌ HTTP Error {response.status_code}: {response.text}")
+            try:
+                response_data = response.json()
+            except ValueError:
+                self.log_message(f"❌ Invalid JSON response: {response.text}")
                 return None
+
+            if response.ok:
+                return response_data
+
+            self.log_message(f"❌ HTTP Error {response.status_code}: {response_data}")
+            return response_data
 
         except requests.exceptions.RequestException as e:
             self.log_message(f"❌ Network Error: {str(e)}")
@@ -204,8 +256,8 @@ class LicenseAdminTool:
                 message = result.get('message', '')
                 self.log_message(f"🔄 {message}")
 
-                if 'Generated' in message:
-                    generated_keys = result.get('generated_keys', [])
+                generated_keys = result.get("generated_keys", [])
+                if generated_keys:
                     self.log_message(f"🔑 New keys generated:")
                     for key in generated_keys:
                         self.log_message(f"   • {key}")
@@ -247,6 +299,7 @@ class LicenseAdminTool:
             if result and result.get('success'):
                 self.log_message(f"✅ Successfully generated {count} keys!")
                 generated_keys = result.get('generated_keys', [])
+
                 self.log_message("🔑 Generated keys:")
                 for key in generated_keys:
                     self.log_message(f"   • {key}")

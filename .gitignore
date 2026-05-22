@@ -57,6 +57,9 @@ sysinfo.txt
 *.exe
 *.x86_64
 
+# Local Supabase config for Unity license validation
+**/Assets/Resources/SupabaseLicenseConfig.asset
+
 # Important:
 # Keep this ignored unless you intentionally want to publish Unity packages.
 *.unitypackage

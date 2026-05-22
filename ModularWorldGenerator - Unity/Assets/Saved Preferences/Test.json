@@ -1,40 +1,28 @@
 {
     "configuration": {
-        "terrainLength": 542.0,
-        "terrainWidth": 516.0,
-        "environmentDensity": 0.5270919799804688,
+        "terrainLength": 500.0,
+        "terrainWidth": 500.0,
+        "environmentDensity": 0.3354920446872711,
         "numHorizontalRoads": 3,
         "numVerticalRoads": 3,
-        "buildingAreaMaterial": "Street",
+        "buildingAreaMaterial": "Bricks",
         "roadMaterial": "Asphalt road",
-        "parkMaterial": "Grass",
-        "crosswalkMaterial": "Dry cracked earth"
+        "parkMaterial": "Dirty sand",
+        "crosswalkMaterial": "Crosswalk"
     },
     "npc": {
         "list": [
             {
                 "npcName": "Alex",
-                "npcCount": 13
-            },
-            {
-                "npcName": "Jackson",
-                "npcCount": 20
-            },
-            {
-                "npcName": "Rona",
-                "npcCount": 11
+                "npcCount": 18
             }
         ]
     },
     "buildings": {
         "list": [
             {
-                "buildingName": "low_building",
-                "buildingCount": 23
-            },
-            {
-                "buildingName": "low_resident_building_Red",
-                "buildingCount": 44
+                "buildingName": "low_residant_building_green",
+                "buildingCount": 18
             }
         ]
     },
@@ -42,18 +30,10 @@
         "list": [
             {
                 "vehicleName": "Ambulance_1A",
-                "vehicleCount": 32
-            },
-            {
-                "vehicleName": "Compact_1A",
-                "vehicleCount": 29
-            },
-            {
-                "vehicleName": "Interceptor_1A",
-                "vehicleCount": 16
+                "vehicleCount": 21
             }
         ]
     },
-    "timestamp": "30/06/2025 20:16:20",
+    "timestamp": "22/05/2026 16:21:55",
     "savedByUser": "benzo"
 }
