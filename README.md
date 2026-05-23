@@ -341,5 +341,3 @@ The tool includes a cloud-based licensing system using **Supabase**.
 - Designed only for **Unity**, not Unreal/Godot
 - Complex scenes may hit memory limits on low-end PCs
 - Dynamic runtime regeneration not yet supported
-
-Want me to also generate a **repository structure section**, or a **CHANGELOG.md**, or **LICENSE.md**?
