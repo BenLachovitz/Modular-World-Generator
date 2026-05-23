@@ -25,8 +25,6 @@ This repository contains the full source code, editor scripts, algorithms, and d
 9. [Pro License System](#pro-license-system)
 10. [Performance Benchmarks](#performance-benchmarks)
 11. [Limitations](#limitations)
-12. [Future Work](#future-work)
-13. [Authors](#authors)
 
 ---
 
@@ -229,7 +227,7 @@ Rules ensure spacing and alignment:
 ### **Clone the Repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Modular-World-Generator.git
+git clone https://github.com/BenLachovitz/Modular-World-Generator.git
 cd Modular-World-Generator
 ```
 
@@ -313,7 +311,7 @@ The tool includes a cloud-based licensing system using **Supabase**.
 
 1. User enters license key
 2. Unity sends an HTTPS request to Supabase
-3. Key validated against secure RLS database
+3. Key is validated through a Supabase Edge Function, which communicates with the license database server-side.
 4. Rechecked every 10 minutes
 
 ### **Admin Tool (Python)**
