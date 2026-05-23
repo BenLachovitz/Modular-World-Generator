@@ -97,38 +97,31 @@ This makes it ideal for:
 
 ### **Editor Window**
 
-> Add screenshot here
-> `![Editor Window](images/editor-window.png)`
+![Editor Window](images/editor-window.png)
 
 ### **Generated Scene – Buildings & Roads**
 
-> Add screenshot here
-> `![Generated Scene](images/scene-buildings.png)`
+![Generated Scene](images/scene-buildings.png)
 
 ### **NPC Navigation Preview**
 
-> Add screenshot here
-> `![NPC NavMesh](images/npc-navmesh.png)`
+![NPC NavMesh](images/npc-navmesh.png)
 
 ### **Vehicle Paths**
 
-> Add screenshot here
-> `![Vehicles](images/vehicle-paths.png)`
+![Vehicles](images/vehicle-paths.png)
 
 ### **Grid Layout Visualization**
 
-> Add screenshot here
-> `![Grid Layout](images/grid.png)`
+![Grid Layout](images/grid.png)
 
 ### **License Admin Tool**
 
-> Add screenshot here  
-> `![License Admin Tool](images/license-admin-tool.png)`
+![License Admin Tool](images/license-admin-tool.png)
 
 ### **License Activation Flow**
 
-> Add diagram/screenshot here  
-> `![License Activation Flow](images/license-flow.png)`
+![License Activation Flow](images/license-flow.png)
 
 ---
 
