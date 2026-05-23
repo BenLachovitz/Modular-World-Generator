@@ -1,5 +1,5 @@
 > **A Unity Editor tool for fast, structured, procedural scene generation**
-> *“A happy player starts with a much happier developer.”*
+> _“A happy player starts with a much happier developer.”_
 
 ---
 
@@ -35,20 +35,20 @@ This repository contains the full source code, editor scripts, algorithms, and d
 Modern game development demands fast iteration and efficient content creation.
 This tool solves that need by offering:
 
-* Full-scene procedural generation
-* A clean & simple Unity Editor interface
-* Configurable world parameters
-* Randomization *within* logical constraints
-* Grid-based placement for clean and realistic scenes
-* Integrated navigation for NPCs and vehicles
-* Cloud-based PRO licensing using **Supabase**
+- Full-scene procedural generation
+- A clean & simple Unity Editor interface
+- Configurable world parameters
+- Randomization _within_ logical constraints
+- Grid-based placement for clean and realistic scenes
+- Integrated navigation for NPCs and vehicles
+- Cloud-based PRO licensing using **Supabase**
 
 This makes it ideal for:
 
-* Prototyping levels
-* Generating multiple scene variations
-* Indie developers without large art teams
-* Students and researchers studying procedural generation
+- Prototyping levels
+- Generating multiple scene variations
+- Indie developers without large art teams
+- Students and researchers studying procedural generation
 
 ---
 
@@ -56,40 +56,39 @@ This makes it ideal for:
 
 ### **🧭 Procedural Scene Generation**
 
-* Terrain sizing
-* Horizontal & vertical roads
-* Parks & greenery
-* Buildings, trees, props
+- Terrain sizing
+- Horizontal & vertical roads
+- Parks & greenery
+- Buildings, trees, props
 
 ### **👥 Population Generation**
 
-* NavMesh-driven NPCs
-* Vehicle agents with movement logic
-* Automatic NavMesh baking
+- NavMesh-driven NPCs
+- Vehicle agents with movement logic
+- Automatic NavMesh baking
 
 ### **🎛 User-Friendly Unity Editor Tool**
 
-* EditorWindow interface
-* Sliders, toggles, dropdowns
-* Regenerate/Clear buttons
-* Real-time preview of settings
+- EditorWindow interface
+- Sliders, toggles, dropdowns
+- Regenerate/Clear buttons
+- Real-time preview of settings
 
 ### **📦 Modular Architecture**
 
-* Separated modules:
-
-  * Grid generator
-  * Placement engine
-  * NavMesh handler
-  * Asset manager
-  * License validator
+- Separated modules:
+  - Grid generator
+  - Placement engine
+  - NavMesh handler
+  - Asset manager
+  - License validator
 
 ### **🔐 Supabase Licensing (Pro Version)**
 
-* Key activation
-* Auto-revalidation every 10 minutes
-* Admin tool (Python GUI) for issuing keys
-* Locks/unlocks advanced features
+- Key activation
+- Auto-revalidation every 10 minutes
+- Admin tool (Python GUI) for issuing keys
+- Locks/unlocks advanced features
 
 ---
 
@@ -139,9 +138,9 @@ The generator follows a **structured grid-based pipeline**:
 
 This ensures scenes are both:
 
-* Visually coherent
-* Logically structured
-* Stable for gameplay
+- Visually coherent
+- Logically structured
+- Stable for gameplay
 
 ---
 
@@ -149,28 +148,27 @@ This ensures scenes are both:
 
 ### **🟦 Editor Layer**
 
-* Handles user input
-* Displays tool UI
-* Sends parameters to generation engine
+- Handles user input
+- Displays tool UI
+- Sends parameters to generation engine
 
 ### **🟩 Logic Layer**
 
-* GridGenerator
-* PlacementEngine
-* NavigationHandler
-* AssetManager
+- GridGenerator
+- PlacementEngine
+- NavigationHandler
+- AssetManager
 
 ### **🟪 Backend Layer**
 
-* Supabase key validation
-* HTTP requests via UnityWebRequest
+- Supabase key validation
+- HTTP requests via UnityWebRequest
 
 ---
 
 ### **📐 Architecture Diagram Placeholder**
 
-> Add architecture diagram here
-> `![Architecture Diagram](images/architecture.png)`
+![Architecture Diagram](images/architecture.png)
 
 ---
 
@@ -193,30 +191,30 @@ Modular-World-Generator/
 
 ### **1. Road-Based Grid Creation**
 
-* Roads divide the terrain into structured cells
-* Prevents chaotic or overlapping layouts
+- Roads divide the terrain into structured cells
+- Prevents chaotic or overlapping layouts
 
 ### **2. Placement Logic**
 
-* Buildings → building cells
-* NPCs → walkable areas
-* Vehicles → roads
-* Trees → parks
+- Buildings → building cells
+- NPCs → walkable areas
+- Vehicles → roads
+- Trees → parks
 
 Rules ensure spacing and alignment:
 
 ```txt
-- No overlaps  
-- Respect boundaries  
-- Align to grid axes  
-- Randomized position offset  
+- No overlaps
+- Respect boundaries
+- Align to grid axes
+- Randomized position offset
 ```
 
 ### **3. Navigation System**
 
-* NavMesh baked after placement
-* NPCs use roaming / idle / patrol
-* Vehicles follow custom paths
+- NavMesh baked after placement
+- NPCs use roaming / idle / patrol
+- Vehicles follow custom paths
 
 ---
 
@@ -224,9 +222,9 @@ Rules ensure spacing and alignment:
 
 ### **Requirements**
 
-* Unity **2023.2.20f1** or later
-* .NET Framework compatible with Unity
-* Internet connection (for PRO license features)
+- Unity **2023.2.20f1** or later
+- .NET Framework compatible with Unity
+- Internet connection (for PRO license features)
 
 ### **Clone the Repository**
 
@@ -257,23 +255,23 @@ Window → Tools → Modular World Generator
 
 ### **2. Set Your Parameters**
 
-* Terrain size
-* Road density
-* Building count
-* NPC count
-* Vehicle count
-* Materials
-* Presets
+- Terrain size
+- Road density
+- Building count
+- NPC count
+- Vehicle count
+- Materials
+- Presets
 
 ### **3. Click Generate**
 
 The tool will:
 
-* Build the terrain
-* Draw roads
-* Place assets
-* Bake NavMesh
-* Spawn NPCs & vehicles
+- Build the terrain
+- Draw roads
+- Place assets
+- Bake NavMesh
+- Spawn NPCs & vehicles
 
 ### **4. Need a new variation?**
 
@@ -286,17 +284,17 @@ Click **Regenerate Scene**
 
 # 🛠 **Technology Stack**
 
-| Area | Technology |
-| --- | --- |
-| Game Engine | Unity 2023.2.20f1 |
-| Main Language | C# |
-| Editor Tooling | Unity EditorWindow / EditorGUILayout |
-| Navigation | Unity NavMesh |
-| Backend | Supabase |
+| Area              | Technology                           |
+| ----------------- | ------------------------------------ |
+| Game Engine       | Unity 2023.2.20f1                    |
+| Main Language     | C#                                   |
+| Editor Tooling    | Unity EditorWindow / EditorGUILayout |
+| Navigation        | Unity NavMesh                        |
+| Backend           | Supabase                             |
 | Backend Functions | Supabase Edge Functions / TypeScript |
-| Admin Tool | Python / Tkinter |
-| Networking | UnityWebRequest |
-| Version Control | Git / GitHub |
+| Admin Tool        | Python / Tkinter                     |
+| Networking        | UnityWebRequest                      |
+| Version Control   | Git / GitHub                         |
 
 ---
 
@@ -306,10 +304,10 @@ The tool includes a cloud-based licensing system using **Supabase**.
 
 ### **Pro Features Include**
 
-* Full-scene automatic generation
-* Preset saving & loading
-* Batch generation
-* Extended asset categories
+- Full-scene automatic generation
+- Preset saving & loading
+- Batch generation
+- Extended asset categories
 
 ### **How It Works**
 
@@ -320,9 +318,9 @@ The tool includes a cloud-based licensing system using **Supabase**.
 
 ### **Admin Tool (Python)**
 
-* Issue keys
-* Revoke keys
-* Monitor usage & activation
+- Issue keys
+- Revoke keys
+- Monitor usage & activation
 
 ---
 
@@ -339,9 +337,9 @@ The tool includes a cloud-based licensing system using **Supabase**.
 
 # ⚠️ **Limitations**
 
-* Asset quality depends on user's prefab library
-* Designed only for **Unity**, not Unreal/Godot
-* Complex scenes may hit memory limits on low-end PCs
-* Dynamic runtime regeneration not yet supported
+- Asset quality depends on user's prefab library
+- Designed only for **Unity**, not Unreal/Godot
+- Complex scenes may hit memory limits on low-end PCs
+- Dynamic runtime regeneration not yet supported
 
 Want me to also generate a **repository structure section**, or a **CHANGELOG.md**, or **LICENSE.md**?
