@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['Scripts\\license_admin_tool.py'],
+    ['license_admin_tool.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='UnityLicenseAdmin',
+    name='license_admin_tool',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

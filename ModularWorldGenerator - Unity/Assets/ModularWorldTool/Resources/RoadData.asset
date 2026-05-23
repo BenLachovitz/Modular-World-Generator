@@ -25,7 +25,7 @@ MonoBehaviour:
     canGoStraightV: 0
     canGoStraightH: 0
   - roadName: Corner_BottomRight
-    position: {x: 515, y: 0.03, z: 5}
+    position: {x: 693, y: 0.03, z: 5}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     canGoStraightV: 0
     canGoStraightH: 0
   - roadName: Corner_TopRight
-    position: {x: 515, y: 0.03, z: 515}
+    position: {x: 693, y: 0.03, z: 704}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
     canGoStraightV: 0
     canGoStraightH: 0
   - roadName: Corner_TopLeft
-    position: {x: 5, y: 0.03, z: 515}
+    position: {x: 5, y: 0.03, z: 704}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -58,8 +58,8 @@ MonoBehaviour:
     canGoStraightV: 0
     canGoStraightH: 0
   - roadName: PerimeterRoad_Top_Segment_0
-    position: {x: 90.833336, y: 0.07, z: 515}
-    scale: {x: 16.166668, y: 1, z: 1}
+    position: {x: 75.3, y: 0.07, z: 704}
+    scale: {x: 13.06, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterIntersection_Top_1
-    position: {x: 176.66667, y: 0.03, z: 515}
+    position: {x: 145.6, y: 0.03, z: 704}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
     canGoStraightV: 0
     canGoStraightH: 1
   - roadName: PerimeterRoad_Top_Segment_1
-    position: {x: 260, y: 0.07, z: 515}
-    scale: {x: 15.666667, y: 1, z: 1}
+    position: {x: 213.40001, y: 0.07, z: 704}
+    scale: {x: 12.56, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterIntersection_Top_2
-    position: {x: 343.33334, y: 0.03, z: 515}
+    position: {x: 281.2, y: 0.03, z: 704}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -102,8 +102,52 @@ MonoBehaviour:
     canGoStraightV: 0
     canGoStraightH: 1
   - roadName: PerimeterRoad_Top_Segment_2
-    position: {x: 429.1667, y: 0.07, z: 515}
-    scale: {x: 16.166666, y: 1, z: 1}
+    position: {x: 349, y: 0.07, z: 704}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Top_3
+    position: {x: 416.80002, y: 0.03, z: 704}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: -1
+    canGoStraightV: 0
+    canGoStraightH: 1
+  - roadName: PerimeterRoad_Top_Segment_3
+    position: {x: 484.60004, y: 0.07, z: 704}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Top_4
+    position: {x: 552.4, y: 0.03, z: 704}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 1
+    canGoStraightV: 0
+    canGoStraightH: 1
+  - roadName: PerimeterRoad_Top_Segment_4
+    position: {x: 622.7, y: 0.07, z: 704}
+    scale: {x: 13.059998, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -113,8 +157,8 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterRoad_Bottom_Segment_0
-    position: {x: 90.833336, y: 0.07, z: 5}
-    scale: {x: 16.166668, y: 1, z: 1}
+    position: {x: 75.3, y: 0.07, z: 5}
+    scale: {x: 13.06, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -124,7 +168,7 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterIntersection_Bottom_1
-    position: {x: 176.66667, y: 0.03, z: 5}
+    position: {x: 145.6, y: 0.03, z: 5}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -135,8 +179,8 @@ MonoBehaviour:
     canGoStraightV: 0
     canGoStraightH: 1
   - roadName: PerimeterRoad_Bottom_Segment_1
-    position: {x: 260, y: 0.07, z: 5}
-    scale: {x: 15.666667, y: 1, z: 1}
+    position: {x: 213.40001, y: 0.07, z: 5}
+    scale: {x: 12.56, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -146,7 +190,7 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterIntersection_Bottom_2
-    position: {x: 343.33334, y: 0.03, z: 5}
+    position: {x: 281.2, y: 0.03, z: 5}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -157,8 +201,52 @@ MonoBehaviour:
     canGoStraightV: 0
     canGoStraightH: 1
   - roadName: PerimeterRoad_Bottom_Segment_2
-    position: {x: 429.1667, y: 0.07, z: 5}
-    scale: {x: 16.166666, y: 1, z: 1}
+    position: {x: 349, y: 0.07, z: 5}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Bottom_3
+    position: {x: 416.80002, y: 0.03, z: 5}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 1
+    canGoStraightV: 0
+    canGoStraightH: 1
+  - roadName: PerimeterRoad_Bottom_Segment_3
+    position: {x: 484.60004, y: 0.07, z: 5}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Bottom_4
+    position: {x: 552.4, y: 0.03, z: 5}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: -1
+    canGoStraightV: 0
+    canGoStraightH: 1
+  - roadName: PerimeterRoad_Bottom_Segment_4
+    position: {x: 622.7, y: 0.07, z: 5}
+    scale: {x: 13.059998, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -168,8 +256,8 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterRoad_Left_Segment_0
-    position: {x: 5, y: 0.07, z: 132.5}
-    scale: {x: 1, y: 1, z: 24.5}
+    position: {x: 5, y: 0.07, z: 50.5625}
+    scale: {x: 1, y: 1, z: 8.1125}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 1
@@ -179,7 +267,7 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterIntersection_Left_1
-    position: {x: 5, y: 0.03, z: 260}
+    position: {x: 5, y: 0.03, z: 96.125}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -190,8 +278,140 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 0
   - roadName: PerimeterRoad_Left_Segment_1
-    position: {x: 5, y: 0.07, z: 387.5}
-    scale: {x: 1, y: 1, z: 24.5}
+    position: {x: 5, y: 0.07, z: 139.1875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Left_2
+    position: {x: 5, y: 0.03, z: 182.25}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: -1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Left_Segment_2
+    position: {x: 5, y: 0.07, z: 225.3125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Left_3
+    position: {x: 5, y: 0.03, z: 268.375}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Left_Segment_3
+    position: {x: 5, y: 0.07, z: 311.4375}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Left_4
+    position: {x: 5, y: 0.03, z: 354.5}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: -1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Left_Segment_4
+    position: {x: 5, y: 0.07, z: 397.5625}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Left_5
+    position: {x: 5, y: 0.03, z: 440.625}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Left_Segment_5
+    position: {x: 5, y: 0.07, z: 483.6875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Left_6
+    position: {x: 5, y: 0.03, z: 526.75}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: -1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Left_Segment_6
+    position: {x: 5, y: 0.07, z: 569.8125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Left_7
+    position: {x: 5, y: 0.03, z: 612.875}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Left_Segment_7
+    position: {x: 5, y: 0.07, z: 658.4375}
+    scale: {x: 1, y: 1, z: 8.1125}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 1
@@ -201,8 +421,8 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterRoad_Right_Segment_0
-    position: {x: 515, y: 0.07, z: 132.5}
-    scale: {x: 1, y: 1, z: 24.5}
+    position: {x: 693, y: 0.07, z: 50.5625}
+    scale: {x: 1, y: 1, z: 8.1125}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 1
@@ -212,7 +432,7 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: PerimeterIntersection_Right_1
-    position: {x: 515, y: 0.03, z: 260}
+    position: {x: 693, y: 0.03, z: 96.125}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -223,8 +443,140 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 0
   - roadName: PerimeterRoad_Right_Segment_1
-    position: {x: 515, y: 0.07, z: 387.5}
-    scale: {x: 1, y: 1, z: 24.5}
+    position: {x: 693, y: 0.07, z: 139.1875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Right_2
+    position: {x: 693, y: 0.03, z: 182.25}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Right_Segment_2
+    position: {x: 693, y: 0.07, z: 225.3125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Right_3
+    position: {x: 693, y: 0.03, z: 268.375}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: -1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Right_Segment_3
+    position: {x: 693, y: 0.07, z: 311.4375}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Right_4
+    position: {x: 693, y: 0.03, z: 354.5}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Right_Segment_4
+    position: {x: 693, y: 0.07, z: 397.5625}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Right_5
+    position: {x: 693, y: 0.03, z: 440.625}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: -1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Right_Segment_5
+    position: {x: 693, y: 0.07, z: 483.6875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Right_6
+    position: {x: 693, y: 0.03, z: 526.75}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Right_Segment_6
+    position: {x: 693, y: 0.07, z: 569.8125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: PerimeterIntersection_Right_7
+    position: {x: 693, y: 0.03, z: 612.875}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: -1
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 0
+  - roadName: PerimeterRoad_Right_Segment_7
+    position: {x: 693, y: 0.07, z: 658.4375}
+    scale: {x: 1, y: 1, z: 8.1125}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 1
@@ -234,8 +586,8 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: MainRoad_H_1_Segment_0
-    position: {x: 90.833336, y: 0.03, z: 260}
-    scale: {x: 16.166668, y: 1, z: 1}
+    position: {x: 75.3, y: 0.03, z: 96.125}
+    scale: {x: 13.06, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -245,8 +597,8 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: MainRoad_H_1_Segment_1
-    position: {x: 260, y: 0.03, z: 260}
-    scale: {x: 15.666667, y: 1, z: 1}
+    position: {x: 213.40001, y: 0.03, z: 96.125}
+    scale: {x: 12.56, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -256,8 +608,360 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: MainRoad_H_1_Segment_2
-    position: {x: 429.1667, y: 0.03, z: 260}
-    scale: {x: 16.166666, y: 1, z: 1}
+    position: {x: 349, y: 0.03, z: 96.125}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_1_Segment_3
+    position: {x: 484.60004, y: 0.03, z: 96.125}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_1_Segment_4
+    position: {x: 622.7, y: 0.03, z: 96.125}
+    scale: {x: 13.059998, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_2_Segment_0
+    position: {x: 75.3, y: 0.03, z: 182.25}
+    scale: {x: 13.06, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_2_Segment_1
+    position: {x: 213.40001, y: 0.03, z: 182.25}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_2_Segment_2
+    position: {x: 349, y: 0.03, z: 182.25}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_2_Segment_3
+    position: {x: 484.60004, y: 0.03, z: 182.25}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_2_Segment_4
+    position: {x: 622.7, y: 0.03, z: 182.25}
+    scale: {x: 13.059998, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_3_Segment_0
+    position: {x: 75.3, y: 0.03, z: 268.375}
+    scale: {x: 13.06, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_3_Segment_1
+    position: {x: 213.40001, y: 0.03, z: 268.375}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_3_Segment_2
+    position: {x: 349, y: 0.03, z: 268.375}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_3_Segment_3
+    position: {x: 484.60004, y: 0.03, z: 268.375}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_3_Segment_4
+    position: {x: 622.7, y: 0.03, z: 268.375}
+    scale: {x: 13.059998, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_4_Segment_0
+    position: {x: 75.3, y: 0.03, z: 354.5}
+    scale: {x: 13.06, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_4_Segment_1
+    position: {x: 213.40001, y: 0.03, z: 354.5}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_4_Segment_2
+    position: {x: 349, y: 0.03, z: 354.5}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_4_Segment_3
+    position: {x: 484.60004, y: 0.03, z: 354.5}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_4_Segment_4
+    position: {x: 622.7, y: 0.03, z: 354.5}
+    scale: {x: 13.059998, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_5_Segment_0
+    position: {x: 75.3, y: 0.03, z: 440.625}
+    scale: {x: 13.06, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_5_Segment_1
+    position: {x: 213.40001, y: 0.03, z: 440.625}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_5_Segment_2
+    position: {x: 349, y: 0.03, z: 440.625}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_5_Segment_3
+    position: {x: 484.60004, y: 0.03, z: 440.625}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_5_Segment_4
+    position: {x: 622.7, y: 0.03, z: 440.625}
+    scale: {x: 13.059998, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_6_Segment_0
+    position: {x: 75.3, y: 0.03, z: 526.75}
+    scale: {x: 13.06, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_6_Segment_1
+    position: {x: 213.40001, y: 0.03, z: 526.75}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_6_Segment_2
+    position: {x: 349, y: 0.03, z: 526.75}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_6_Segment_3
+    position: {x: 484.60004, y: 0.03, z: 526.75}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_6_Segment_4
+    position: {x: 622.7, y: 0.03, z: 526.75}
+    scale: {x: 13.059998, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 1
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_7_Segment_0
+    position: {x: 75.3, y: 0.03, z: 612.875}
+    scale: {x: 13.06, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_7_Segment_1
+    position: {x: 213.40001, y: 0.03, z: 612.875}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_7_Segment_2
+    position: {x: 349, y: 0.03, z: 612.875}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_7_Segment_3
+    position: {x: 484.60004, y: 0.03, z: 612.875}
+    scale: {x: 12.56, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 1
+    vertical: 0
+    direction: 0
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_H_7_Segment_4
+    position: {x: 622.7, y: 0.03, z: 612.875}
+    scale: {x: 13.059998, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 1
     vertical: 0
@@ -267,8 +971,8 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: MainRoad_V_1_Segment_0
-    position: {x: 176.66667, y: 0.03, z: 132.5}
-    scale: {x: 1, y: 1, z: 24.5}
+    position: {x: 145.6, y: 0.03, z: 50.5625}
+    scale: {x: 1, y: 1, z: 8.1125}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 1
@@ -278,8 +982,74 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: MainRoad_V_1_Segment_1
-    position: {x: 176.66667, y: 0.03, z: 387.5}
-    scale: {x: 1, y: 1, z: 24.5}
+    position: {x: 145.6, y: 0.03, z: 139.1875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_1_Segment_2
+    position: {x: 145.6, y: 0.03, z: 225.3125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_1_Segment_3
+    position: {x: 145.6, y: 0.03, z: 311.4375}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_1_Segment_4
+    position: {x: 145.6, y: 0.03, z: 397.5625}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_1_Segment_5
+    position: {x: 145.6, y: 0.03, z: 483.6875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_1_Segment_6
+    position: {x: 145.6, y: 0.03, z: 569.8125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_1_Segment_7
+    position: {x: 145.6, y: 0.03, z: 658.4375}
+    scale: {x: 1, y: 1, z: 8.1125}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 1
@@ -289,8 +1059,8 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: MainRoad_V_2_Segment_0
-    position: {x: 343.33334, y: 0.03, z: 132.5}
-    scale: {x: 1, y: 1, z: 24.5}
+    position: {x: 281.2, y: 0.03, z: 50.5625}
+    scale: {x: 1, y: 1, z: 8.1125}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 1
@@ -300,8 +1070,250 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: MainRoad_V_2_Segment_1
-    position: {x: 343.33334, y: 0.03, z: 387.5}
-    scale: {x: 1, y: 1, z: 24.5}
+    position: {x: 281.2, y: 0.03, z: 139.1875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_2_Segment_2
+    position: {x: 281.2, y: 0.03, z: 225.3125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_2_Segment_3
+    position: {x: 281.2, y: 0.03, z: 311.4375}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_2_Segment_4
+    position: {x: 281.2, y: 0.03, z: 397.5625}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_2_Segment_5
+    position: {x: 281.2, y: 0.03, z: 483.6875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_2_Segment_6
+    position: {x: 281.2, y: 0.03, z: 569.8125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_2_Segment_7
+    position: {x: 281.2, y: 0.03, z: 658.4375}
+    scale: {x: 1, y: 1, z: 8.1125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_3_Segment_0
+    position: {x: 416.80002, y: 0.03, z: 50.5625}
+    scale: {x: 1, y: 1, z: 8.1125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_3_Segment_1
+    position: {x: 416.80002, y: 0.03, z: 139.1875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_3_Segment_2
+    position: {x: 416.80002, y: 0.03, z: 225.3125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_3_Segment_3
+    position: {x: 416.80002, y: 0.03, z: 311.4375}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_3_Segment_4
+    position: {x: 416.80002, y: 0.03, z: 397.5625}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_3_Segment_5
+    position: {x: 416.80002, y: 0.03, z: 483.6875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_3_Segment_6
+    position: {x: 416.80002, y: 0.03, z: 569.8125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_3_Segment_7
+    position: {x: 416.80002, y: 0.03, z: 658.4375}
+    scale: {x: 1, y: 1, z: 8.1125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 2
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_4_Segment_0
+    position: {x: 552.4, y: 0.03, z: 50.5625}
+    scale: {x: 1, y: 1, z: 8.1125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_4_Segment_1
+    position: {x: 552.4, y: 0.03, z: 139.1875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_4_Segment_2
+    position: {x: 552.4, y: 0.03, z: 225.3125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_4_Segment_3
+    position: {x: 552.4, y: 0.03, z: 311.4375}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_4_Segment_4
+    position: {x: 552.4, y: 0.03, z: 397.5625}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_4_Segment_5
+    position: {x: 552.4, y: 0.03, z: 483.6875}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_4_Segment_6
+    position: {x: 552.4, y: 0.03, z: 569.8125}
+    scale: {x: 1, y: 1, z: 7.6125}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 1
+    direction: 3
+    fromVertical: -1
+    fromHorizontal: -1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: MainRoad_V_4_Segment_7
+    position: {x: 552.4, y: 0.03, z: 658.4375}
+    scale: {x: 1, y: 1, z: 8.1125}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 1
@@ -311,7 +1323,7 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: Intersection_H1_V1
-    position: {x: 176.66667, y: 0.03, z: 260}
+    position: {x: 145.6, y: 0.03, z: 96.125}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -322,7 +1334,7 @@ MonoBehaviour:
     canGoStraightV: 1
     canGoStraightH: 1
   - roadName: Intersection_H1_V2
-    position: {x: 343.33334, y: 0.03, z: 260}
+    position: {x: 281.2, y: 0.03, z: 96.125}
     scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
@@ -332,50 +1344,292 @@ MonoBehaviour:
     fromHorizontal: 0
     canGoStraightV: 1
     canGoStraightH: 1
-  - roadName: AccessRoad_29
-    position: {x: 424.46167, y: 0.03, z: 272.09888}
-    scale: {x: 1, y: 1, z: 1.4197785}
+  - roadName: Intersection_H1_V3
+    position: {x: 416.80002, y: 0.03, z: 96.125}
+    scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 0
-    direction: -2
-    fromVertical: -1
-    fromHorizontal: -1
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
     canGoStraightV: 1
     canGoStraightH: 1
-  - roadName: AccessRoad_30
-    position: {x: 105.22222, y: 0.03, z: 507.2665}
-    scale: {x: 1, y: 1, z: 0.54669726}
+  - roadName: Intersection_H1_V4
+    position: {x: 552.4, y: 0.03, z: 96.125}
+    scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 0
-    direction: -2
-    fromVertical: -1
-    fromHorizontal: -1
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
     canGoStraightV: 1
     canGoStraightH: 1
-  - roadName: AccessRoad_31
-    position: {x: 27.379465, y: 0.03, z: 159.10696}
-    scale: {x: 3.475893, y: 1, z: 1}
+  - roadName: Intersection_H2_V1
+    position: {x: 145.6, y: 0.03, z: 182.25}
+    scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 0
-    direction: -2
-    fromVertical: -1
-    fromHorizontal: -1
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
     canGoStraightV: 1
     canGoStraightH: 1
-  - roadName: AccessRoad_32
-    position: {x: 494.93106, y: 0.03, z: 445.07144}
-    scale: {x: 3.0137894, y: 1, z: 1}
+  - roadName: Intersection_H2_V2
+    position: {x: 281.2, y: 0.03, z: 182.25}
+    scale: {x: 1, y: 1, z: 1}
     rotation: {x: -0, y: -0, z: -0, w: 1}
     horizontal: 0
     vertical: 0
-    direction: -2
-    fromVertical: -1
-    fromHorizontal: -1
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
     canGoStraightV: 1
     canGoStraightH: 1
-  terrainWidth: 520
-  terrainLength: 520
+  - roadName: Intersection_H2_V3
+    position: {x: 416.80002, y: 0.03, z: 182.25}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H2_V4
+    position: {x: 552.4, y: 0.03, z: 182.25}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H3_V1
+    position: {x: 145.6, y: 0.03, z: 268.375}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H3_V2
+    position: {x: 281.2, y: 0.03, z: 268.375}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H3_V3
+    position: {x: 416.80002, y: 0.03, z: 268.375}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H3_V4
+    position: {x: 552.4, y: 0.03, z: 268.375}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H4_V1
+    position: {x: 145.6, y: 0.03, z: 354.5}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H4_V2
+    position: {x: 281.2, y: 0.03, z: 354.5}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H4_V3
+    position: {x: 416.80002, y: 0.03, z: 354.5}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H4_V4
+    position: {x: 552.4, y: 0.03, z: 354.5}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H5_V1
+    position: {x: 145.6, y: 0.03, z: 440.625}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H5_V2
+    position: {x: 281.2, y: 0.03, z: 440.625}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H5_V3
+    position: {x: 416.80002, y: 0.03, z: 440.625}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H5_V4
+    position: {x: 552.4, y: 0.03, z: 440.625}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H6_V1
+    position: {x: 145.6, y: 0.03, z: 526.75}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H6_V2
+    position: {x: 281.2, y: 0.03, z: 526.75}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H6_V3
+    position: {x: 416.80002, y: 0.03, z: 526.75}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H6_V4
+    position: {x: 552.4, y: 0.03, z: 526.75}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H7_V1
+    position: {x: 145.6, y: 0.03, z: 612.875}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H7_V2
+    position: {x: 281.2, y: 0.03, z: 612.875}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H7_V3
+    position: {x: 416.80002, y: 0.03, z: 612.875}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 0
+    fromHorizontal: 1
+    canGoStraightV: 1
+    canGoStraightH: 1
+  - roadName: Intersection_H7_V4
+    position: {x: 552.4, y: 0.03, z: 612.875}
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    horizontal: 0
+    vertical: 0
+    direction: -1
+    fromVertical: 1
+    fromHorizontal: 0
+    canGoStraightV: 1
+    canGoStraightH: 1
+  terrainWidth: 698
+  terrainLength: 709
   roadWidth: 10

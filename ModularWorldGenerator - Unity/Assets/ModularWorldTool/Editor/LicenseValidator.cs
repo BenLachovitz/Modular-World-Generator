@@ -308,7 +308,7 @@ public static class LicenseValidator
                 www.downloadHandler = new DownloadHandlerBuffer();
                 ConfigureRequest(www);
 
-                Debug.Log("Sending activation request to: " + API_URL);
+                Debug.Log("Sending activation request");
                 var operation = www.SendWebRequest();
 
                 while (!operation.isDone)
